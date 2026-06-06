@@ -189,3 +189,16 @@ All `package.json` scripts run through `vp run` (alias: `vpr`).
 | `vp run db:migrate:local` / `db:migrate:remote`        | Apply D1 migrations                                      |
 | `vp run deploy`                                        | Build and deploy web (Pages) + server (Workers)          |
 | `vp run rename <name>`                                 | Rename the project after duplicating the template        |
+
+## Acknowledgements
+
+This template stands on the shoulders of these projects — much respect:
+
+- [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack) — the original scaffold this monorepo grew from.
+- [mattpocock/skills](https://github.com/mattpocock/skills) — the source of many of the bundled agent skills and the inspiration for the `skills-lock.json` workflow.
+
+The self-evolution pipeline (`packages/evolution`, `docs/agents/self-evolution.md`) draws on:
+
+- [MUSE: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation (arXiv:2605.27366)](https://arxiv.org/pdf/2605.27366v1)
+- [Anthropic — Recursive Self-Improvement](https://www.anthropic.com/institute/recursive-self-improvement)
+- [NousResearch/hermes-agent-self-evolution](https://github.com/NousResearch/hermes-agent-self-evolution) — evolutionary skill/prompt optimization for Hermes Agent.
