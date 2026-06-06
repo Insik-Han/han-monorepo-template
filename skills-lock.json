@@ -60,12 +60,6 @@
       "source": "callstackincubator/agent-device",
       "sourceType": "github"
     },
-    "edit-article": {
-      "computedHash": "6d29872a4015fcbb4879fe1bddf1919995c477dcf7248885efb85722f50e6c4d",
-      "skillPath": "skills/personal/edit-article/SKILL.md",
-      "source": "mattpocock/skills",
-      "sourceType": "github"
-    },
     "enhanced-message-context": {
       "computedHash": "84d0a3d209e678781fe5aa7152e108cfb91ff7c6b7a1c39e15fccd5d8dcdf4c8",
       "skillPath": "enhanced-message-context/SKILL.md",
@@ -156,12 +150,6 @@
       "source": "expo/skills",
       "sourceType": "github"
     },
-    "obsidian-vault": {
-      "computedHash": "960437c7c2febc15cf9d49964f0c8bd889d90a56e81b6eaa33f3ac5b594291c3",
-      "skillPath": "skills/personal/obsidian-vault/SKILL.md",
-      "source": "mattpocock/skills",
-      "sourceType": "github"
-    },
     "prototype": {
       "computedHash": "e4d0c8f8cb3fc096ee99405a15491da466545cf4a3694bee5a0c9db2fa621a43",
       "skillPath": "skills/engineering/prototype/SKILL.md",
@@ -189,12 +177,6 @@
     "scaffold-exercises": {
       "computedHash": "486d60a7e984b76850bd22b3b58b98d0063a3b9b3acf319e4d5a37bf1283ea02",
       "skillPath": "skills/misc/scaffold-exercises/SKILL.md",
-      "source": "mattpocock/skills",
-      "sourceType": "github"
-    },
-    "setup-matt-pocock-skills": {
-      "computedHash": "0164a8b1ef998abca426056c6ed8a7716a9d4692fc6daa5378f68381a6dafd24",
-      "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
       "source": "mattpocock/skills",
       "sourceType": "github"
     },
