@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "han-monorepo-template-web",
+  "compatibility_date": "2025-12-01",
+  "pages_build_output_dir": "dist/client",
+}

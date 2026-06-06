@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "vp pack",
+    "deploy": "wrangler deploy",
+    "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
+    "test": "vp test run"
+  },
+  "dependencies": {
+    "@han-monorepo-template/api": "workspace:*",
+    "@han-monorepo-template/auth": "workspace:*",
+    "@han-monorepo-template/db": "workspace:*",
+    "@han-monorepo-template/env": "workspace:*",
+    "@orpc/openapi": "catalog:",
+    "@orpc/server": "catalog:",
+    "@orpc/zod": "catalog:",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "hono": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:",
+    "@han-monorepo-template/config": "workspace:*",
+    "@types/node": "^22.13.14",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:",
+    "wrangler": "catalog:"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "han-monorepo-template-server",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-12-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+  },
+  "dev": {
+    "port": 3000,
+  },
+  "vars": {
+    "CORS_ORIGIN": "http://localhost:3001",
+    "BETTER_AUTH_URL": "http://localhost:3000",
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "han-monorepo-template-db",
+      // TODO: `wrangler d1 create han-monorepo-template-db` の出力で置き換える
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "../../packages/db/src/migrations",
+    },
+  ],
+}

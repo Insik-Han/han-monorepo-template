@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # https://viteplus.dev/guide/ci — installs Vite+, Node, the package
+      # manager from package.json#packageManager, and handles dependency caching.
+      - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
+        with:
+          node-version: "26"
+          cache: true
+      - run: vp install
+      - run: vp check
+      # lingui catalog freshness per app — re-extracts and fails on git diff
+      # if .po catalogs are stale relative to source macros (Lingui v6 dropped
+      # `extract --check`). See docs/agents/i18n.md.
+      - run: vp run i18n:check
+      # turbo `test` task — unit/integration suites incl. packages/evolution
+      # structural gates. E2E (Playwright/Maestro) is intentionally excluded.
+      - run: vp run test
+      # vp build is not part of CI yet: Cloudflare/native builds need secrets.
+      # Add a build job here once deploy targets are wired up.
+
+  # Self-evolution PRs (label: self-evolving) get a stricter diff-level gate:
+  # only allowlisted files may change, and engine self-modifications must ship
+  # an ADR in the same diff. See docs/agents/self-evolution.md.
+  evolution-guard:
+    if: github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'self-evolving')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
+        with:
+          node-version: "26"
+          cache: true
+      - run: vp install
+      - run: vp test run src/evolution-guard.test.ts
+        working-directory: packages/evolution
+        env:
+          EVOLUTION_DIFF_BASE: origin/${{ github.base_ref }}

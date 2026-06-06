@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "cloudflare-docs": {
+      "url": "https://docs.mcp.cloudflare.com/sse"
+    },
+    "better-auth": {
+      "url": "https://mcp.inkeep.com/better-auth/mcp"
+    },
+    "expo-mcp": {
+      "url": "https://mcp.expo.dev/mcp"
+    }
+  }
+}

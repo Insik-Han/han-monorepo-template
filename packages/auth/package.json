@@ -1,0 +1,25 @@
+{
+  "name": "@han-monorepo-template/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@better-auth/expo": "catalog:",
+    "@han-monorepo-template/db": "workspace:*",
+    "@han-monorepo-template/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@han-monorepo-template/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

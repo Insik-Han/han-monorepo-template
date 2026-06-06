@@ -1,0 +1,3 @@
+{
+  "extends": "@han-monorepo-template/config/tsconfig.base.json"
+}

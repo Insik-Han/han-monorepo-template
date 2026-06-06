@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "VoidZero.vite-plus-extension-pack",
+    "cloudflare.cloudflare-workers-bindings-extension",
+    "expo.vscode-expo-tools"
+  ]
+}

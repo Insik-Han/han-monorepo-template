@@ -1,0 +1,30 @@
+{
+  "name": "@han-monorepo-template/db",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "test": "vp test run"
+  },
+  "dependencies": {
+    "@han-monorepo-template/env": "workspace:*",
+    "@libsql/client": "0.15.15",
+    "dotenv": "catalog:",
+    "drizzle-orm": "^0.45.1",
+    "libsql": "0.5.22",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@han-monorepo-template/config": "workspace:*",
+    "drizzle-kit": "^0.31.8",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  }
+}

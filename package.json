@@ -1,0 +1,40 @@
+{
+  "name": "han-monorepo-template",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:generate": "turbo -F @han-monorepo-template/db db:generate",
+    "db:migrate:local": "wrangler d1 migrations apply han-monorepo-template-db --local --config apps/server/wrangler.jsonc",
+    "db:migrate:remote": "wrangler d1 migrations apply han-monorepo-template-db --remote --config apps/server/wrangler.jsonc",
+    "deploy": "turbo deploy",
+    "test": "turbo test",
+    "test:e2e": "turbo test:e2e",
+    "i18n:extract": "turbo i18n:extract",
+    "i18n:check": "turbo i18n:check",
+    "check": "vp lint && vp fmt --write",
+    "rename": "node scripts/rename.ts"
+  },
+  "dependencies": {
+    "@han-monorepo-template/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:",
+    "@han-monorepo-template/config": "workspace:*",
+    "@types/node": "^22.13.14",
+    "turbo": "^2.8.12",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@10.33.0"
+}

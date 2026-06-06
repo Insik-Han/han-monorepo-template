@@ -1,0 +1,817 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-06-06 15:12+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/widgets/app-shell/ui/dashboard-sidebar.tsx
+msgid "Account"
+msgstr "Account"
+
+#. Context menu section heading: task actions
+#. Employees table column: row actions
+#. Orders table column: row actions
+#: src/pages/dashboard/ui/employees-table.tsx
+#: src/pages/orders/ui/orders-page.tsx
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Actions"
+#~ msgstr "Actions"
+
+#. Button that adds a new task to a Kanban column; {columnLabel} is the column name
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Add {columnLabel} task"
+#~ msgstr "Add {columnLabel} task"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Address"
+msgstr "Address"
+
+#: src/widgets/app-shell/ui/dashboard-sidebar.tsx
+msgid "Admin"
+msgstr "Admin"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Alberta"
+msgstr "Alberta"
+
+#. Order status filter option: show all statuses
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "All"
+#~ msgstr "All"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "All employees"
+#~ msgstr "All employees"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "All Employees"
+#~ msgstr "All Employees"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Already have an account? Sign In"
+msgstr "Already have an account? Sign In"
+
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "Analytics"
+#~ msgstr "Analytics"
+
+#: src/routes/index.tsx
+msgid "API Status"
+msgstr "API Status"
+
+#. Analytics KPI: average session duration
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#~ msgid "Avg. session"
+#~ msgstr "Avg. session"
+
+#. Top pages table column: average time on page
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Avg. time"
+#~ msgstr "Avg. time"
+
+#. Top pages table column: bounce rate
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Bounce"
+#~ msgstr "Bounce"
+
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#~ msgid "Bounce rate"
+#~ msgstr "Bounce rate"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "British Columbia"
+msgstr "British Columbia"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "CAD - Canadian Dollar"
+msgstr "CAD - Canadian Dollar"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Can I enable two-factor authentication?"
+msgstr "Can I enable two-factor authentication?"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Change period"
+#~ msgstr "Change period"
+
+#. API health-check status while the request is in flight
+#: src/routes/index.tsx
+msgid "Checking..."
+msgstr "Checking..."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "City"
+msgstr "City"
+
+#. Button that toggles which table columns are shown
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Columns"
+#~ msgstr "Columns"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Community"
+msgstr "Community"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Completed"
+#~ msgstr "Completed"
+
+#. API health-check status when the API is reachable
+#: src/routes/index.tsx
+msgid "Connected"
+msgstr "Connected"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Contact support"
+msgstr "Contact support"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Copy ID"
+#~ msgstr "Copy ID"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Create Account"
+msgstr "Create Account"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Currency"
+msgstr "Currency"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Customer"
+#~ msgstr "Customer"
+
+#. Time-grouping option: daily
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Daily"
+#~ msgstr "Daily"
+
+#. Dark color theme option in the theme toggle menu
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "Dark"
+msgstr "Dark"
+
+#. Top navigation link to the dashboard
+#: src/widgets/app-shell/config/nav-items.ts
+#: src/widgets/header/ui/header.tsx
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: src/widgets/app-shell/ui/dashboard-sidebar.tsx
+msgid "Dashboard navigation"
+msgstr "Dashboard navigation"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Dashboard tabs"
+#~ msgstr "Dashboard tabs"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#. Filter button: filter orders by date range
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Date range"
+#~ msgstr "Date range"
+
+#. Context menu action: delete the task
+#. Row action: delete this employee
+#: src/pages/dashboard/ui/employees-table-row-actions.tsx
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Delete"
+#~ msgstr "Delete"
+
+#: src/pages/orders/ui/orders-row-actions.tsx
+#~ msgid "Delete order"
+#~ msgstr "Delete order"
+
+#. API health-check status when the API is unreachable
+#: src/routes/index.tsx
+msgid "Disconnected"
+msgstr "Disconnected"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Documentation"
+msgstr "Documentation"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Done"
+#~ msgstr "Done"
+
+#. Button that downloads the dashboard report
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Drop tasks here"
+#~ msgstr "Drop tasks here"
+
+#. Context menu action: duplicate the task
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Duplicate"
+#~ msgstr "Duplicate"
+
+#. Context menu action: edit the task
+#. Row action: edit this employee
+#: src/pages/dashboard/ui/employees-table-row-actions.tsx
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Edit"
+#~ msgstr "Edit"
+
+#: src/pages/orders/ui/orders-row-actions.tsx
+#~ msgid "Edit order"
+#~ msgstr "Edit order"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Email"
+msgstr "Email"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "EUR - Euro"
+msgstr "EUR - Euro"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Expenses"
+#~ msgstr "Expenses"
+
+#: src/pages/analytics/ui/analytics-page.tsx
+#~ msgid "Explore how your product is performing."
+#~ msgstr "Explore how your product is performing."
+
+#. Order status: payment failed
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Failed"
+#~ msgstr "Failed"
+
+#. Button that opens filtering controls for the table
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Find answers, contact support, or dig into the docs."
+msgstr "Find answers, contact support, or dig into the docs."
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Frequently asked questions"
+msgstr "Frequently asked questions"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "GBP - British Pound"
+msgstr "GBP - British Pound"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Get help from our support team. We reply within one business day."
+msgstr "Get help from our support team. We reply within one business day."
+
+#: src/widgets/app-shell/ui/app-shell.tsx
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Good morning, Kate"
+msgstr "Good morning, Kate"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Head to Settings > General and click 'Delete account'. This action is "
+"irreversible and purges all your data after 30 days."
+msgstr "Head to Settings > General and click 'Delete account'. This action is "
+"irreversible and purges all your data after 30 days."
+
+#: src/widgets/app-shell/config/nav-items.ts
+msgid "Help & Information"
+msgstr "Help & Information"
+
+#. Top navigation link to the landing page
+#: src/widgets/header/ui/header.tsx
+msgid "Home"
+msgstr "Home"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "How do I delete my account?"
+msgstr "How do I delete my account?"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "How do I invite teammates?"
+msgstr "How do I invite teammates?"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "How do I upgrade my plan?"
+msgstr "How do I upgrade my plan?"
+
+#: src/pages/analytics/ui/device-breakdown-card.tsx
+#~ msgid "How visitors are reaching your site."
+#~ msgstr "How visitors are reaching your site."
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "In Progress"
+#~ msgstr "In Progress"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Invalid email address"
+msgstr "Invalid email address"
+
+#. Button that opens the invite-teammate flow
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Invite"
+msgstr "Invite"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Join the community to ask questions, share tips, and connect with other "
+"users."
+msgstr "Join the community to ask questions, share tips, and connect with other "
+"users."
+
+#. Accessible label for the language picker in the settings page
+#. Accessible label for the language picker in the settings page
+#: src/features/locale/ui/locale-select.tsx
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Language"
+msgstr "Language"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last 2 weeks"
+#~ msgstr "Last 2 weeks"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last 3 months"
+#~ msgstr "Last 3 months"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Last 30 days"
+#~ msgstr "Last 30 days"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Last 7 days"
+#~ msgstr "Last 7 days"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Last 90 days"
+#~ msgstr "Last 90 days"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last month"
+#~ msgstr "Last month"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last week"
+#~ msgstr "Last week"
+
+#. Light color theme option in the theme toggle menu
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "Light"
+msgstr "Light"
+
+#: src/widgets/app-shell/config/nav-items.ts
+msgid "Log out"
+msgstr "Log out"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Manage and track customer orders."
+#~ msgstr "Manage and track customer orders."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Manage your organization profile and preferences."
+msgstr "Manage your organization profile and preferences."
+
+#. Employees table column: member name and email
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Member"
+#~ msgstr "Member"
+
+#. Time-grouping option: monthly
+#. Time-grouping option: monthly
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Monthly"
+#~ msgstr "Monthly"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "More options"
+#~ msgstr "More options"
+
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Most-viewed pages over the selected period."
+#~ msgstr "Most-viewed pages over the selected period."
+
+#. Context menu section heading: move task to another column
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Move to"
+#~ msgstr "Move to"
+
+#. Context menu action that moves a task to another column
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Move to {colLabel}"
+#~ msgstr "Move to {colLabel}"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "MXN - Mexican Peso"
+msgstr "MXN - Mexican Peso"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "My Account"
+msgstr "My Account"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Name"
+msgstr "Name"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Name must be at least 2 characters"
+msgstr "Name must be at least 2 characters"
+
+#: src/features/auth/ui/sign-in-form.tsx
+msgid "Need an account? Sign Up"
+msgstr "Need an account? Sign Up"
+
+#. Badge marking a newly added navigation item
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "New"
+#~ msgstr "New"
+
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Notifications"
+msgstr "Notifications"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Ontario"
+msgstr "Ontario"
+
+#. Link that opens the help resource
+#: src/pages/help/ui/help-page.tsx
+msgid "Open"
+msgstr "Open"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Open Settings > Billing and click 'Change plan'. Changes take effect at "
+"the start of your next billing cycle."
+msgstr "Open Settings > Billing and click 'Change plan'. Changes take effect at "
+"the start of your next billing cycle."
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Order ID"
+#~ msgstr "Order ID"
+
+#: src/pages/orders/ui/orders-page.tsx
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "Orders"
+#~ msgstr "Orders"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Organic"
+#~ msgstr "Organic"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Organization Bio"
+msgstr "Organization Bio"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Organization Email"
+msgstr "Organization Email"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Organization Name"
+msgstr "Organization Name"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Overview"
+#~ msgstr "Overview"
+
+#. Order status: payment completed
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Paid"
+#~ msgstr "Paid"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Paid Ads"
+#~ msgstr "Paid Ads"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Password"
+msgstr "Password"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Password must be at least 8 characters"
+msgstr "Password must be at least 8 characters"
+
+#. Top pages table column: page URL path
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Path"
+#~ msgstr "Path"
+
+#. Order status: payment pending
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Pending"
+#~ msgstr "Pending"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Postal / ZIP"
+msgstr "Postal / ZIP"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Postal code"
+msgstr "Postal code"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Province / State"
+msgstr "Province / State"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Quebec"
+msgstr "Quebec"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Read the docs, guides, and API reference to get up and running."
+msgstr "Read the docs, guides, and API reference to get up and running."
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Refresh"
+#~ msgstr "Refresh"
+
+#. Order status: payment refunded
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Refunded"
+#~ msgstr "Refunded"
+
+#. Button that resets the settings form to its previous values
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Reset"
+msgstr "Reset"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Role"
+#~ msgstr "Role"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Sales"
+#~ msgstr "Sales"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Sales Performance"
+#~ msgstr "Sales Performance"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Save changes"
+msgstr "Save changes"
+
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Search"
+msgstr "Search"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Search orders..."
+#~ msgstr "Search orders..."
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Search..."
+#~ msgstr "Search..."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Select currency"
+msgstr "Select currency"
+
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#: src/pages/analytics/ui/device-breakdown-card.tsx
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#: src/pages/analytics/ui/top-channels-card.tsx
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Sessions"
+#~ msgstr "Sessions"
+
+#: src/pages/analytics/ui/top-channels-card.tsx
+#~ msgid "Sessions by acquisition channel."
+#~ msgstr "Sessions by acquisition channel."
+
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#~ msgid "Sessions over time"
+#~ msgstr "Sessions over time"
+
+#: src/widgets/app-shell/config/nav-items.ts
+msgid "Settings"
+msgstr "Settings"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Show email on public profile"
+msgstr "Show email on public profile"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/widgets/header/ui/user-menu.tsx
+msgid "Sign In"
+msgstr "Sign In"
+
+#: src/features/auth/ui/sign-in-form.tsx
+msgid "Sign in successful"
+msgstr "Sign in successful"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "Sign out"
+msgstr "Sign out"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "Sign Out"
+msgstr "Sign Out"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Sign Up"
+msgstr "Sign Up"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Sign up successful"
+msgstr "Sign up successful"
+
+#. Button that opens sorting controls for the table
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Sort"
+#~ msgstr "Sort"
+
+#. Filter button: filter orders by status
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Still stuck? <0>support@example.com</0>"
+msgstr "Still stuck? <0>support@example.com</0>"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Street address"
+msgstr "Street address"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Submitting..."
+msgstr "Submitting..."
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Subtasks"
+#~ msgstr "Subtasks"
+
+#. System color theme option in the theme toggle menu
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "System"
+msgstr "System"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Tell customers about your organization"
+msgstr "Tell customers about your organization"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "The currency that your organization will be collecting."
+msgstr "The currency that your organization will be collecting."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "The language used across the app."
+msgstr "The language used across the app."
+
+#: src/pages/home/ui/home-page.tsx
+msgid "This is a placeholder home page. Build your product's dashboard here, or "
+"start from the Settings and Help pages in the sidebar."
+msgstr "This is a placeholder home page. Build your product's dashboard here, "
+"or start from the Settings and Help pages in the sidebar."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This is how customers can contact you for support."
+msgstr "This is how customers can contact you for support."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This is where your organization is registered."
+msgstr "This is where your organization is registered."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This will be displayed on your public profile."
+msgstr "This will be displayed on your public profile."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This will be displayed on your public profile. Maximum 240 characters."
+msgstr "This will be displayed on your public profile. Maximum 240 characters."
+
+#: src/pages/analytics/ui/analytics-page.tsx
+#~ msgid "Time range"
+#~ msgstr "Time range"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "To Do"
+#~ msgstr "To Do"
+
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "Toggle theme"
+msgstr "Toggle theme"
+
+#: src/pages/analytics/ui/top-channels-card.tsx
+#~ msgid "Top channels"
+#~ msgstr "Top channels"
+
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Top pages"
+#~ msgstr "Top pages"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Track work across your team."
+#~ msgstr "Track work across your team."
+
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "Tracker"
+#~ msgstr "Tracker"
+
+#: src/pages/analytics/ui/device-breakdown-card.tsx
+#~ msgid "Traffic by device"
+#~ msgstr "Traffic by device"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Traffic Source"
+#~ msgstr "Traffic Source"
+
+#. Top pages table column: trend direction
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Trend"
+#~ msgstr "Trend"
+
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#~ msgid "Unique users"
+#~ msgstr "Unique users"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "USD - US Dollar"
+msgstr "USD - US Dollar"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "User menu"
+msgstr "User menu"
+
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#~ msgid "Users"
+#~ msgstr "Users"
+
+#. Row action: view this employee
+#: src/pages/dashboard/ui/employees-table-row-actions.tsx
+#~ msgid "View"
+#~ msgstr "View"
+
+#: src/pages/orders/ui/orders-row-actions.tsx
+#~ msgid "View order"
+#~ msgstr "View order"
+
+#. Top pages table column: number of page views
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Views"
+#~ msgstr "Views"
+
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#~ msgid "vs. previous 30 days"
+#~ msgstr "vs. previous 30 days"
+
+#. Time-grouping option: weekly
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Weekly"
+#~ msgstr "Weekly"
+
+#: src/features/auth/ui/sign-in-form.tsx
+msgid "Welcome Back"
+msgstr "Welcome Back"
+
+#: src/pages/home/ui/home-page.tsx
+msgid "Welcome to your dashboard"
+msgstr "Welcome to your dashboard"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Worker ID"
+#~ msgstr "Worker ID"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Worker Type"
+#~ msgstr "Worker Type"
+
+#. Time-grouping option: yearly
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Yearly"
+#~ msgstr "Yearly"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Yes. In Settings > Security turn on Two-factor authentication and follow "
+"the on-screen prompts."
+msgstr "Yes. In Settings > Security turn on Two-factor authentication and "
+"follow the on-screen prompts."
+
+#: src/pages/help/ui/help-page.tsx
+msgid "You can invite new members from Settings > Team. They'll receive an "
+"email invite with instructions to join."
+msgstr "You can invite new members from Settings > Team. They'll receive an "
+"email invite with instructions to join."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Your organization"
+msgstr "Your organization"

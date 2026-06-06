@@ -1,0 +1,12 @@
+# Native smoke flow — run with `pnpm -F native test:e2e` (or `maestro test .maestro`)
+# against a simulator/emulator that has a dev build installed.
+#
+# `appId` must match the bundle identifier / package name of the build.
+# `expo prebuild` derives the default below from the app slug; update it if
+# app.json sets an explicit ios.bundleIdentifier / android.package.
+appId: com.anonymous.hanmonorepotemplate
+---
+- launchApp
+- assertVisible: "Home"
+- tapOn: "Explore"
+- assertVisible: "Tab Two"

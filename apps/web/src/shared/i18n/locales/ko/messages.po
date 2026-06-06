@@ -1,0 +1,811 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-06-06 15:12+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ko\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/widgets/app-shell/ui/dashboard-sidebar.tsx
+msgid "Account"
+msgstr "계정"
+
+#. Context menu section heading: task actions
+#. Employees table column: row actions
+#. Orders table column: row actions
+#: src/pages/dashboard/ui/employees-table.tsx
+#: src/pages/orders/ui/orders-page.tsx
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Actions"
+#~ msgstr "작업"
+
+#. Button that adds a new task to a Kanban column; {columnLabel} is the column name
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Add {columnLabel} task"
+#~ msgstr "{columnLabel} 작업 추가"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Address"
+msgstr "주소"
+
+#: src/widgets/app-shell/ui/dashboard-sidebar.tsx
+msgid "Admin"
+msgstr "관리자"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Alberta"
+msgstr "앨버타"
+
+#. Order status filter option: show all statuses
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "All"
+#~ msgstr "전체"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "All employees"
+#~ msgstr "전체 직원"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "All Employees"
+#~ msgstr "전체 직원"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Already have an account? Sign In"
+msgstr "이미 계정이 있으신가요? 로그인"
+
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "Analytics"
+#~ msgstr "분석"
+
+#: src/routes/index.tsx
+msgid "API Status"
+msgstr "API 상태"
+
+#. Analytics KPI: average session duration
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#~ msgid "Avg. session"
+#~ msgstr "평균 세션 시간"
+
+#. Top pages table column: average time on page
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Avg. time"
+#~ msgstr "평균 체류 시간"
+
+#. Top pages table column: bounce rate
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Bounce"
+#~ msgstr "이탈"
+
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#~ msgid "Bounce rate"
+#~ msgstr "이탈률"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "British Columbia"
+msgstr "브리티시컬럼비아"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "CAD - Canadian Dollar"
+msgstr "CAD - 캐나다 달러"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Can I enable two-factor authentication?"
+msgstr "2단계 인증을 사용할 수 있나요?"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Change period"
+#~ msgstr "기간 변경"
+
+#. API health-check status while the request is in flight
+#: src/routes/index.tsx
+msgid "Checking..."
+msgstr "확인 중..."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "City"
+msgstr "도시"
+
+#. Button that toggles which table columns are shown
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Columns"
+#~ msgstr "열"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Community"
+msgstr "커뮤니티"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Completed"
+#~ msgstr "완료됨"
+
+#. API health-check status when the API is reachable
+#: src/routes/index.tsx
+msgid "Connected"
+msgstr "연결됨"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Contact support"
+msgstr "지원팀에 문의"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Copy ID"
+#~ msgstr "ID 복사"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Create Account"
+msgstr "계정 만들기"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Currency"
+msgstr "통화"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Customer"
+#~ msgstr "고객"
+
+#. Time-grouping option: daily
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Daily"
+#~ msgstr "일별"
+
+#. Dark color theme option in the theme toggle menu
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "Dark"
+msgstr "다크"
+
+#. Top navigation link to the dashboard
+#: src/widgets/app-shell/config/nav-items.ts
+#: src/widgets/header/ui/header.tsx
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: src/widgets/app-shell/ui/dashboard-sidebar.tsx
+msgid "Dashboard navigation"
+msgstr "대시보드 탐색"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Dashboard tabs"
+#~ msgstr "대시보드 탭"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Date"
+#~ msgstr "날짜"
+
+#. Filter button: filter orders by date range
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Date range"
+#~ msgstr "기간"
+
+#. Context menu action: delete the task
+#. Row action: delete this employee
+#: src/pages/dashboard/ui/employees-table-row-actions.tsx
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Delete"
+#~ msgstr "삭제"
+
+#: src/pages/orders/ui/orders-row-actions.tsx
+#~ msgid "Delete order"
+#~ msgstr "주문 삭제"
+
+#. API health-check status when the API is unreachable
+#: src/routes/index.tsx
+msgid "Disconnected"
+msgstr "연결 끊김"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Documentation"
+msgstr "문서"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Done"
+#~ msgstr "완료"
+
+#. Button that downloads the dashboard report
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Download"
+#~ msgstr "다운로드"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Drop tasks here"
+#~ msgstr "여기에 작업을 놓으세요"
+
+#. Context menu action: duplicate the task
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Duplicate"
+#~ msgstr "복제"
+
+#. Context menu action: edit the task
+#. Row action: edit this employee
+#: src/pages/dashboard/ui/employees-table-row-actions.tsx
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Edit"
+#~ msgstr "편집"
+
+#: src/pages/orders/ui/orders-row-actions.tsx
+#~ msgid "Edit order"
+#~ msgstr "주문 편집"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Email"
+msgstr "이메일"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "EUR - Euro"
+msgstr "EUR - 유로"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Expenses"
+#~ msgstr "지출"
+
+#: src/pages/analytics/ui/analytics-page.tsx
+#~ msgid "Explore how your product is performing."
+#~ msgstr "제품의 성과를 살펴보세요."
+
+#. Order status: payment failed
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Failed"
+#~ msgstr "실패"
+
+#. Button that opens filtering controls for the table
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Filter"
+#~ msgstr "필터"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Find answers, contact support, or dig into the docs."
+msgstr "답변을 찾거나, 지원팀에 문의하거나, 문서를 살펴보세요."
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Frequently asked questions"
+msgstr "자주 묻는 질문"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "GBP - British Pound"
+msgstr "GBP - 영국 파운드"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Get help from our support team. We reply within one business day."
+msgstr "지원팀의 도움을 받으세요. 1영업일 이내에 답변드립니다."
+
+#: src/widgets/app-shell/ui/app-shell.tsx
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Good morning, Kate"
+msgstr "좋은 아침입니다, Kate님"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Head to Settings > General and click 'Delete account'. This action is "
+"irreversible and purges all your data after 30 days."
+msgstr "설정 > 일반으로 이동하여 '계정 삭제'를 클릭하세요. 이 작업은 되돌릴 수 없으며 30일 후 모든 데이터가 삭제됩니다."
+
+#: src/widgets/app-shell/config/nav-items.ts
+msgid "Help & Information"
+msgstr "도움말 및 정보"
+
+#. Top navigation link to the landing page
+#: src/widgets/header/ui/header.tsx
+msgid "Home"
+msgstr "홈"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "How do I delete my account?"
+msgstr "계정을 어떻게 삭제하나요?"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "How do I invite teammates?"
+msgstr "팀원을 어떻게 초대하나요?"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "How do I upgrade my plan?"
+msgstr "요금제를 어떻게 업그레이드하나요?"
+
+#: src/pages/analytics/ui/device-breakdown-card.tsx
+#~ msgid "How visitors are reaching your site."
+#~ msgstr "방문자가 사이트에 도달하는 경로입니다."
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "In Progress"
+#~ msgstr "진행 중"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Invalid email address"
+msgstr "이메일 주소가 올바르지 않습니다"
+
+#. Button that opens the invite-teammate flow
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Invite"
+msgstr "초대"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Join the community to ask questions, share tips, and connect with other "
+"users."
+msgstr "커뮤니티에 참여하여 질문하고, 팁을 공유하고, 다른 사용자와 소통하세요."
+
+#. Accessible label for the language picker in the settings page
+#. Accessible label for the language picker in the settings page
+#: src/features/locale/ui/locale-select.tsx
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Language"
+msgstr "언어"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last 2 weeks"
+#~ msgstr "지난 2주"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last 3 months"
+#~ msgstr "지난 3개월"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Last 30 days"
+#~ msgstr "지난 30일"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Last 7 days"
+#~ msgstr "지난 7일"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Last 90 days"
+#~ msgstr "지난 90일"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last month"
+#~ msgstr "지난달"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Last week"
+#~ msgstr "지난주"
+
+#. Light color theme option in the theme toggle menu
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "Light"
+msgstr "라이트"
+
+#: src/widgets/app-shell/config/nav-items.ts
+msgid "Log out"
+msgstr "로그아웃"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Manage and track customer orders."
+#~ msgstr "고객 주문을 관리하고 추적합니다."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Manage your organization profile and preferences."
+msgstr "조직 프로필과 환경설정을 관리합니다."
+
+#. Employees table column: member name and email
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Member"
+#~ msgstr "멤버"
+
+#. Time-grouping option: monthly
+#. Time-grouping option: monthly
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Monthly"
+#~ msgstr "월별"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "More options"
+#~ msgstr "추가 옵션"
+
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Most-viewed pages over the selected period."
+#~ msgstr "선택한 기간 동안 가장 많이 조회된 페이지입니다."
+
+#. Context menu section heading: move task to another column
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Move to"
+#~ msgstr "이동"
+
+#. Context menu action that moves a task to another column
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Move to {colLabel}"
+#~ msgstr "{colLabel}(으)로 이동"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "MXN - Mexican Peso"
+msgstr "MXN - 멕시코 페소"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "My Account"
+msgstr "내 계정"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Name"
+msgstr "이름"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Name must be at least 2 characters"
+msgstr "이름은 2자 이상이어야 합니다"
+
+#: src/features/auth/ui/sign-in-form.tsx
+msgid "Need an account? Sign Up"
+msgstr "계정이 필요하신가요? 회원가입"
+
+#. Badge marking a newly added navigation item
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "New"
+#~ msgstr "신규"
+
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Notifications"
+msgstr "알림"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Ontario"
+msgstr "온타리오"
+
+#. Link that opens the help resource
+#: src/pages/help/ui/help-page.tsx
+msgid "Open"
+msgstr "열기"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Open Settings > Billing and click 'Change plan'. Changes take effect at "
+"the start of your next billing cycle."
+msgstr "설정 > 결제를 열고 '요금제 변경'을 클릭하세요. 변경 사항은 다음 결제 주기 시작 시 적용됩니다."
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Order ID"
+#~ msgstr "주문 ID"
+
+#: src/pages/orders/ui/orders-page.tsx
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "Orders"
+#~ msgstr "주문"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Organic"
+#~ msgstr "오가닉"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Organization Bio"
+msgstr "조직 소개"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Organization Email"
+msgstr "조직 이메일"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Organization Name"
+msgstr "조직 이름"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Overview"
+#~ msgstr "개요"
+
+#. Order status: payment completed
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Paid"
+#~ msgstr "결제 완료"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Paid Ads"
+#~ msgstr "유료 광고"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Password"
+msgstr "비밀번호"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Password must be at least 8 characters"
+msgstr "비밀번호는 8자 이상이어야 합니다"
+
+#. Top pages table column: page URL path
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Path"
+#~ msgstr "경로"
+
+#. Order status: payment pending
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Pending"
+#~ msgstr "대기 중"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Postal / ZIP"
+msgstr "우편번호"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Postal code"
+msgstr "우편번호"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Province / State"
+msgstr "주 / 도"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Quebec"
+msgstr "퀘벡"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Read the docs, guides, and API reference to get up and running."
+msgstr "문서, 가이드, API 레퍼런스를 읽고 시작하세요."
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Refresh"
+#~ msgstr "새로고침"
+
+#. Order status: payment refunded
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Refunded"
+#~ msgstr "환불됨"
+
+#. Button that resets the settings form to its previous values
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Reset"
+msgstr "초기화"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Role"
+#~ msgstr "역할"
+
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Sales"
+#~ msgstr "매출"
+
+#: src/pages/dashboard/ui/sales-performance-card.tsx
+#~ msgid "Sales Performance"
+#~ msgstr "매출 실적"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Save changes"
+msgstr "변경 사항 저장"
+
+#: src/widgets/app-shell/ui/dashboard-navbar.tsx
+msgid "Search"
+msgstr "검색"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Search orders..."
+#~ msgstr "주문 검색..."
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Search..."
+#~ msgstr "검색..."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Select currency"
+msgstr "통화 선택"
+
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#: src/pages/analytics/ui/device-breakdown-card.tsx
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#: src/pages/analytics/ui/top-channels-card.tsx
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Sessions"
+#~ msgstr "세션"
+
+#: src/pages/analytics/ui/top-channels-card.tsx
+#~ msgid "Sessions by acquisition channel."
+#~ msgstr "획득 채널별 세션 수입니다."
+
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#~ msgid "Sessions over time"
+#~ msgstr "세션 추이"
+
+#: src/widgets/app-shell/config/nav-items.ts
+msgid "Settings"
+msgstr "설정"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Show email on public profile"
+msgstr "공개 프로필에 이메일 표시"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/widgets/header/ui/user-menu.tsx
+msgid "Sign In"
+msgstr "로그인"
+
+#: src/features/auth/ui/sign-in-form.tsx
+msgid "Sign in successful"
+msgstr "로그인되었습니다"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "Sign out"
+msgstr "로그아웃"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "Sign Out"
+msgstr "로그아웃"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Sign Up"
+msgstr "회원가입"
+
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Sign up successful"
+msgstr "회원가입이 완료되었습니다"
+
+#. Button that opens sorting controls for the table
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Sort"
+#~ msgstr "정렬"
+
+#. Filter button: filter orders by status
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Status"
+#~ msgstr "상태"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Still stuck? <0>support@example.com</0>"
+msgstr "여전히 해결되지 않나요? <0>support@example.com</0>"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Street address"
+msgstr "도로명 주소"
+
+#: src/features/auth/ui/sign-in-form.tsx
+#: src/features/auth/ui/sign-up-form.tsx
+msgid "Submitting..."
+msgstr "제출 중..."
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Subtasks"
+#~ msgstr "하위 작업"
+
+#. System color theme option in the theme toggle menu
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "System"
+msgstr "시스템"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Tell customers about your organization"
+msgstr "고객에게 조직을 소개하세요"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "The currency that your organization will be collecting."
+msgstr "조직이 수금할 통화입니다."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "The language used across the app."
+msgstr "앱 전체에서 사용되는 언어입니다."
+
+#: src/pages/home/ui/home-page.tsx
+msgid "This is a placeholder home page. Build your product's dashboard here, or "
+"start from the Settings and Help pages in the sidebar."
+msgstr "이것은 플레이스홀더 홈페이지입니다. 여기에 제품의 대시보드를 구축하거나, 사이드바의 설정 및 도움말 페이지에서 시작하세요."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This is how customers can contact you for support."
+msgstr "고객이 지원을 위해 연락하는 방법입니다."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This is where your organization is registered."
+msgstr "조직이 등록된 위치입니다."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This will be displayed on your public profile."
+msgstr "공개 프로필에 표시됩니다."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "This will be displayed on your public profile. Maximum 240 characters."
+msgstr "공개 프로필에 표시됩니다. 최대 240자."
+
+#: src/pages/analytics/ui/analytics-page.tsx
+#~ msgid "Time range"
+#~ msgstr "기간"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "To Do"
+#~ msgstr "할 일"
+
+#: src/features/theme/ui/mode-toggle.tsx
+msgid "Toggle theme"
+msgstr "테마 전환"
+
+#: src/pages/analytics/ui/top-channels-card.tsx
+#~ msgid "Top channels"
+#~ msgstr "상위 채널"
+
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Top pages"
+#~ msgstr "상위 페이지"
+
+#: src/pages/orders/ui/orders-page.tsx
+#~ msgid "Total"
+#~ msgstr "합계"
+
+#: src/pages/tracker/ui/tracker-page.tsx
+#~ msgid "Track work across your team."
+#~ msgstr "팀 전체의 작업을 추적합니다."
+
+#: src/widgets/app-shell/config/nav-items.ts
+#~ msgid "Tracker"
+#~ msgstr "트래커"
+
+#: src/pages/analytics/ui/device-breakdown-card.tsx
+#~ msgid "Traffic by device"
+#~ msgstr "기기별 트래픽"
+
+#: src/pages/dashboard/ui/traffic-source-card.tsx
+#~ msgid "Traffic Source"
+#~ msgstr "트래픽 소스"
+
+#. Top pages table column: trend direction
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Trend"
+#~ msgstr "추세"
+
+#: src/pages/analytics/ui/analytics-kpi-row.tsx
+#~ msgid "Unique users"
+#~ msgstr "순 사용자 수"
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "USD - US Dollar"
+msgstr "USD - 미국 달러"
+
+#: src/widgets/header/ui/user-menu.tsx
+msgid "User menu"
+msgstr "사용자 메뉴"
+
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#~ msgid "Users"
+#~ msgstr "사용자"
+
+#. Row action: view this employee
+#: src/pages/dashboard/ui/employees-table-row-actions.tsx
+#~ msgid "View"
+#~ msgstr "보기"
+
+#: src/pages/orders/ui/orders-row-actions.tsx
+#~ msgid "View order"
+#~ msgstr "주문 보기"
+
+#. Top pages table column: number of page views
+#: src/pages/analytics/ui/top-pages-card.tsx
+#~ msgid "Views"
+#~ msgstr "조회수"
+
+#: src/pages/analytics/ui/sessions-over-time-card.tsx
+#~ msgid "vs. previous 30 days"
+#~ msgstr "이전 30일 대비"
+
+#. Time-grouping option: weekly
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Weekly"
+#~ msgstr "주별"
+
+#: src/features/auth/ui/sign-in-form.tsx
+msgid "Welcome Back"
+msgstr "다시 오신 것을 환영합니다"
+
+#: src/pages/home/ui/home-page.tsx
+msgid "Welcome to your dashboard"
+msgstr "대시보드에 오신 것을 환영합니다"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Worker ID"
+#~ msgstr "작업자 ID"
+
+#: src/pages/dashboard/ui/employees-table.tsx
+#~ msgid "Worker Type"
+#~ msgstr "작업자 유형"
+
+#. Time-grouping option: yearly
+#: src/pages/dashboard/ui/dashboard-toolbar.tsx
+#~ msgid "Yearly"
+#~ msgstr "연도별"
+
+#: src/pages/help/ui/help-page.tsx
+msgid "Yes. In Settings > Security turn on Two-factor authentication and follow "
+"the on-screen prompts."
+msgstr "예. 설정 > 보안에서 2단계 인증을 켜고 화면의 안내를 따르세요."
+
+#: src/pages/help/ui/help-page.tsx
+msgid "You can invite new members from Settings > Team. They'll receive an "
+"email invite with instructions to join."
+msgstr "설정 > 팀에서 새 멤버를 초대할 수 있습니다. 가입 안내가 담긴 초대 이메일이 발송됩니다."
+
+#: src/pages/settings/ui/settings-page.tsx
+msgid "Your organization"
+msgstr "내 조직"

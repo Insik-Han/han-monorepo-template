@@ -1,0 +1,15 @@
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp"]
+
+[mcp_servers.cloudflare-docs]
+type = "sse"
+url = "https://docs.mcp.cloudflare.com/sse"
+
+[mcp_servers.better-auth]
+type = "http"
+url = "https://mcp.inkeep.com/better-auth/mcp"
+
+[mcp_servers.expo-mcp]
+type = "http"
+url = "https://mcp.expo.dev/mcp"

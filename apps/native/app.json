@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "scheme": "han-monorepo-template",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "han-monorepo-template",
+    "slug": "han-monorepo-template",
+    "plugins": ["expo-font"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

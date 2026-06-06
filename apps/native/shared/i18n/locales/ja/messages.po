@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-06-06 15:14+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ja\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: features/auth/ui/sign-up.tsx
+msgid "Account created successfully"
+msgstr "アカウントを作成しました"
+
+#: app/(drawer)/index.tsx
+msgid "API Disconnected"
+msgstr "API 切断"
+
+#: app/(drawer)/index.tsx
+msgid "Checking connection..."
+msgstr "接続を確認しています..."
+
+#. Button that closes the modal screen
+#: app/modal.tsx
+msgid "Close"
+msgstr "閉じる"
+
+#: app/(drawer)/index.tsx
+msgid "Connected to API"
+msgstr "API に接続済み"
+
+#. Heading for the sign-up form
+#. Submit button for the sign-up form
+#: features/auth/ui/sign-up.tsx
+msgid "Create Account"
+msgstr "アカウント作成"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "Email"
+msgstr "メールアドレス"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "Email is required"
+msgstr "メールアドレスを入力してください"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "email@example.com"
+msgstr "email@example.com"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "Enter a valid email address"
+msgstr "有効なメールアドレスを入力してください"
+
+#: app/(drawer)/(tabs)/_layout.tsx
+msgid "Explore"
+msgstr "探索"
+
+#: features/auth/ui/sign-in.tsx
+msgid "Failed to sign in"
+msgstr "サインインに失敗しました"
+
+#: features/auth/ui/sign-up.tsx
+msgid "Failed to sign up"
+msgstr "アカウント作成に失敗しました"
+
+#. Button that navigates back to the home screen
+#: app/+not-found.tsx
+msgid "Go Home"
+msgstr "ホームへ"
+
+#: app/(drawer)/_layout.tsx
+#: app/(drawer)/(tabs)/_layout.tsx
+msgid "Home"
+msgstr "ホーム"
+
+#: features/auth/ui/sign-up.tsx
+msgid "John Doe"
+msgstr "山田 太郎"
+
+#. Status chip: backend API is reachable
+#: app/(drawer)/index.tsx
+msgid "LIVE"
+msgstr "稼働中"
+
+#: app/_layout.tsx
+msgid "Modal"
+msgstr "モーダル"
+
+#: app/modal.tsx
+msgid "Modal Screen"
+msgstr "モーダル画面"
+
+#: features/auth/ui/sign-up.tsx
+msgid "Name"
+msgstr "名前"
+
+#: features/auth/ui/sign-up.tsx
+msgid "Name is required"
+msgstr "名前を入力してください"
+
+#: features/auth/ui/sign-up.tsx
+msgid "Name must be at least 2 characters"
+msgstr "名前は2文字以上で入力してください"
+
+#: app/+not-found.tsx
+msgid "Not Found"
+msgstr "見つかりません"
+
+#. Status chip: backend API is unreachable
+#: app/(drawer)/index.tsx
+msgid "OFFLINE"
+msgstr "オフライン"
+
+#: app/+not-found.tsx
+msgid "Page Not Found"
+msgstr "ページが見つかりません"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "Password"
+msgstr "パスワード"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "Password is required"
+msgstr "パスワードを入力してください"
+
+#: app/(drawer)/index.tsx
+msgid "Private Data"
+msgstr "プライベートデータ"
+
+#. Heading for the sign-in form
+#. Submit button for the sign-in form
+#: features/auth/ui/sign-in.tsx
+msgid "Sign In"
+msgstr "サインイン"
+
+#. Button that signs the user out
+#: app/(drawer)/index.tsx
+msgid "Sign Out"
+msgstr "サインアウト"
+
+#: features/auth/ui/sign-in.tsx
+msgid "Signed in successfully"
+msgstr "サインインしました"
+
+#: app/(drawer)/index.tsx
+msgid "System Status"
+msgstr "システム状態"
+
+#: app/(drawer)/(tabs)/index.tsx
+msgid "Tab One"
+msgstr "タブ1"
+
+#: app/(drawer)/(tabs)/two.tsx
+msgid "Tab Two"
+msgstr "タブ2"
+
+#: app/(drawer)/_layout.tsx
+msgid "Tabs"
+msgstr "タブ"
+
+#: app/+not-found.tsx
+msgid "The page you're looking for doesn't exist."
+msgstr "お探しのページは存在しません。"
+
+#: app/modal.tsx
+msgid "This is an example modal screen for dialogs and confirmations."
+msgstr "これはダイアログや確認に使用するモーダル画面のサンプルです。"
+
+#: features/auth/ui/sign-in.tsx
+#: features/auth/ui/sign-up.tsx
+msgid "Use at least 8 characters"
+msgstr "8文字以上で入力してください"
+
+#. placeholder {0}: session.user.name
+#: app/(drawer)/index.tsx
+msgid "Welcome, <0>{0}</0>"
+msgstr "ようこそ、<0>{0}</0> さん"
