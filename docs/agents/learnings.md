@@ -1,6 +1,6 @@
 # Learnings
 
-Append-only buffer written by `.claude/hooks/session-end-learnings.mjs` and digested by `/evolve`. Format spec: `docs/agents/self-evolution.md`. Do not edit entries by hand except to flip `status:` via `/evolve`.
+Append-only buffer written by `.agents/hooks/session-end-learnings.mjs` and digested by `/evolve`. Format spec: `docs/agents/self-evolution.md`. Do not edit entries by hand except to flip `status:` via `/evolve`.
 
 ## 2026-06-06T08:31:37Z · category:vp-test-filter-unsupported · status:undigested
 - target: docs/agents/testing.md

@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/guard-main-branch.mjs"
+            "command": "node \"$CLAUDE_PROJECT_DIR\"/.agents/hooks/guard-main-branch.mjs"
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/session-end-learnings.mjs",
+            "command": "node \"$CLAUDE_PROJECT_DIR\"/.agents/hooks/session-end-learnings.mjs",
             "async": true,
             "timeout": 60
           }

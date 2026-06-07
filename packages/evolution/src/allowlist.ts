@@ -14,7 +14,8 @@ export const STATIC_ALLOWLIST: readonly string[] = [
   "docs/agents/",
   "docs/adr/",
   ".claude/settings.json",
-  ".claude/hooks/",
+  ".codex/hooks.json",
+  ".agents/hooks/",
   "packages/evolution/",
   ".github/workflows/ci.yml",
 ];

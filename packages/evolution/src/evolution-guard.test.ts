@@ -14,7 +14,8 @@ const base = process.env["EVOLUTION_DIFF_BASE"];
 // same diff must carry an ADR explaining the change.
 const ENGINE_PATTERNS = [
   ".claude/settings.json",
-  ".claude/hooks/",
+  ".codex/hooks.json",
+  ".agents/hooks/",
   "packages/evolution/",
   ".github/workflows/ci.yml",
 ] as const;
