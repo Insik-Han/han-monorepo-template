@@ -51,6 +51,7 @@ jobs:
       - run: vp run i18n:extract
       - name: Push catalog updates to the PR branch
         run: |
+          # keep in sync with `catalogs[].path` in each app's lingui.config.ts
           locales="apps/web/src/shared/i18n/locales apps/native/shared/i18n/locales"
           if [ -n "$(git status --porcelain -- $locales)" ]; then
             git config user.name "github-actions[bot]"
