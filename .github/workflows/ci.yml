@@ -27,15 +27,14 @@ jobs:
       # Add a build job here once deploy targets are wired up.
 
   # lingui catalog freshness — re-extracts catalogs on every PR; if they
-  # change, posts the diff as a PR comment and fails the job (Lingui v6
-  # dropped `extract --check`). Read-only by design: CI never pushes to the
-  # PR branch. See docs/agents/i18n.md.
+  # change, writes the diff to the job summary and fails (Lingui v6 dropped
+  # `extract --check`). Zero-permission by design: CI never pushes, never
+  # comments — the diff lives on the run's Summary page. See docs/agents/i18n.md.
   i18n-extract:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
@@ -44,10 +43,7 @@ jobs:
           cache: true
       - run: vp install
       - run: vp run i18n:extract
-      - name: Fail with a PR comment when catalogs are stale
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+      - name: Fail with a job-summary diff when catalogs are stale
         run: |
           # keep in sync with `catalogs[].path` in each app's lingui.config.ts
           locales="apps/web/src/shared/i18n/locales apps/native/shared/i18n/locales"
@@ -63,11 +59,8 @@ jobs:
               echo '```diff'
               git diff -- $locales | head -300
               echo '```'
-            } > /tmp/stale-catalogs.md
-            # fork PRs have a read-only token — the comment is best-effort,
-            # the job failure below is the actual gate.
-            gh pr comment "$PR_NUMBER" --body-file /tmp/stale-catalogs.md || echo "::notice::Could not post PR comment (read-only token?)"
-            echo "::error::Lingui catalogs are stale — run 'vp run i18n:extract' locally and commit the diff."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::Lingui catalogs are stale — run 'vp run i18n:extract' locally and commit the diff (full diff on this job's Summary page)."
             exit 1
           fi
 
