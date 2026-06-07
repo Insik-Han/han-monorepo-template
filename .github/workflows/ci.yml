@@ -20,15 +20,49 @@ jobs:
           cache: true
       - run: vp install
       - run: vp check
-      # lingui catalog freshness per app — re-extracts and fails on git diff
-      # if .po catalogs are stale relative to source macros (Lingui v6 dropped
-      # `extract --check`). See docs/agents/i18n.md.
-      - run: vp run i18n:check
       # turbo `test` task — unit/integration suites incl. packages/evolution
       # structural gates. E2E (Playwright/Maestro) is intentionally excluded.
       - run: vp run test
       # vp build is not part of CI yet: Cloudflare/native builds need secrets.
       # Add a build job here once deploy targets are wired up.
+
+  # lingui catalog freshness — re-extracts catalogs on every PR; if they
+  # change, writes the diff to the job summary and fails (Lingui v6 dropped
+  # `extract --check`). Zero-permission by design: CI never pushes, never
+  # comments — the diff lives on the run's Summary page. See docs/agents/i18n.md.
+  i18n-extract:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
+        with:
+          node-version: "26"
+          cache: true
+      - run: vp install
+      - run: vp run i18n:extract
+      - name: Fail with a job-summary diff when catalogs are stale
+        run: |
+          # keep in sync with `catalogs[].path` in each app's lingui.config.ts
+          locales="apps/web/src/shared/i18n/locales apps/native/shared/i18n/locales"
+          # intent-to-add so newly created catalogs (e.g. a fresh locale) show
+          # up in git diff; single git process, so no index.lock race.
+          git add -N -- $locales
+          if ! git diff --quiet -- $locales; then
+            {
+              echo "### ⚠️ Lingui catalogs are stale"
+              echo
+              echo 'CI re-ran `vp run i18n:extract` and got a diff. Run it locally, translate any new `msgstr` entries, and commit the result.'
+              echo
+              echo '```diff'
+              git diff -- $locales | head -300
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::Lingui catalogs are stale — run 'vp run i18n:extract' locally and commit the diff (full diff on this job's Summary page)."
+            exit 1
+          fi
 
   # Self-evolution PRs (label: self-evolving) get a stricter diff-level gate:
   # only allowlisted files may change, and engine self-modifications must ship

@@ -10,7 +10,6 @@
     "start": "vp dev",
     "deploy": "wrangler pages deploy",
     "i18n:extract": "lingui extract",
-    "i18n:check": "lingui extract && git add -N -- src/shared/i18n/locales && git diff --exit-code -- src/shared/i18n/locales",
     "test": "vp test run",
     "test:e2e": "playwright test"
   },

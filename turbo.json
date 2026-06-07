@@ -25,9 +25,6 @@
     "i18n:extract": {
       "cache": false
     },
-    "i18n:check": {
-      "cache": false
-    },
     "db:generate": {
       "cache": false
     },
