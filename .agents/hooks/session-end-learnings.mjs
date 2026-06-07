@@ -25,6 +25,8 @@ const VALID_TARGET = (target) =>
   target === "AGENTS.md" ||
   target.startsWith("docs/agents/") ||
   target.startsWith(".agents/skills/") ||
+  target.startsWith(".agents/hooks/") ||
+  target === ".codex/hooks.json" ||
   target.startsWith(".claude/");
 
 function userMessages(transcriptPath) {

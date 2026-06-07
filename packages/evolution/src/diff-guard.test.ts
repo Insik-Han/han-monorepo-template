@@ -8,7 +8,7 @@ describe("allowlist", () => {
     expect(isAllowlisted("docs/agents/testing.md")).toBe(true);
     expect(isAllowlisted("docs/adr/0001-self-evolution-pipeline.md")).toBe(true);
     expect(isAllowlisted(".claude/settings.json")).toBe(true);
-    expect(isAllowlisted(".claude/hooks/session-end-learnings.mjs")).toBe(true);
+    expect(isAllowlisted(".agents/hooks/session-end-learnings.mjs")).toBe(true);
     expect(isAllowlisted("packages/evolution/src/allowlist.ts")).toBe(true);
     expect(isAllowlisted(".github/workflows/ci.yml")).toBe(true);
   });

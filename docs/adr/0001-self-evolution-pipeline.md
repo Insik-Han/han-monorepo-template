@@ -18,7 +18,7 @@ We will let the agent evolve its own instructions through a constrained pipeline
 
 Constraints, enforced in code (`packages/evolution/src/allowlist.ts` is the single source of truth):
 
-- **Allowlist**: evolution PRs may only change `AGENTS.md`, `docs/agents/**`, `docs/adr/**`, `.claude/settings.json`, `.claude/hooks/**`, `packages/evolution/**`, `.github/workflows/ci.yml`, and locally-owned skills (skills present in `.agents/skills/` but absent from `skills-lock.json`, plus their runtime symlinks). Lock-managed external skills, app/package source code, lockfiles, and `skills-lock.json` itself are never evolution targets.
+- **Allowlist**: evolution PRs may only change `AGENTS.md`, `docs/agents/**`, `docs/adr/**`, `.claude/settings.json`, `.codex/hooks.json`, `.agents/hooks/**`, `packages/evolution/**`, `.github/workflows/ci.yml`, and locally-owned skills (skills present in `.agents/skills/` but absent from `skills-lock.json`, plus their runtime symlinks). Lock-managed external skills, app/package source code, lockfiles, and `skills-lock.json` itself are never evolution targets.
 - **Engine self-modification** (settings, hooks, `packages/evolution`, CI workflow) is allowed but must ship an ADR in the same diff, enforced by the `evolution-guard` CI job.
 - **Rollback model**: every evolution lands as one PR = one revertable commit on `main`; `git revert` is the recovery path and PR bodies must state it.
 
@@ -28,7 +28,7 @@ Branch protection on `main` (require the `ci` check, forbid direct pushes) is co
 
 - Instructions and skills improve from real session evidence without chat-level ceremony; the human cost is concentrated in PR review.
 - The structural gates (doc size, index integrity, skill frontmatter, symlink integrity, settings schema, lock consistency) double as general repo-invariant tests and run for every PR, not just evolution ones.
-- The learnings hook parser (`.claude/hooks/lib/learnings.mjs`) intentionally duplicates `packages/evolution/src/learnings-format.ts` because hooks cannot import workspace TypeScript; the format test pins both.
+- The learnings hook parser (`.agents/hooks/lib/learnings.mjs`) intentionally duplicates `packages/evolution/src/learnings-format.ts` because hooks cannot import workspace TypeScript; the format test pins both.
 - Dependency changes (`pnpm-lock.yaml`) are outside the allowlist, so an evolution that needs a new package must be split into a human-driven PR first. This is accepted friction (supply-chain safety).
 - Revisit triggers: the learnings buffer overflowing faster than `/evolve` digests it; gate false-positives blocking legitimate doc updates; a need for scheduled (cron) evolution instead of manual `/evolve`.
 

@@ -1,7 +1,7 @@
 /**
  * Canonical parser for docs/agents/learnings.md entries.
  *
- * NOTE: .claude/hooks/lib/learnings.mjs intentionally duplicates this logic —
+ * NOTE: .agents/hooks/lib/learnings.mjs intentionally duplicates this logic —
  * hooks cannot import workspace TypeScript. Keep both in sync (guarded by
  * src/learnings-format.test.ts fixtures). See docs/agents/self-evolution.md.
  *

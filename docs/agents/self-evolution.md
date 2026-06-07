@@ -5,7 +5,7 @@ The agent improves its own instructions and skills through a gated PR pipeline. 
 ## Pipeline
 
 ```
-SessionEnd hook (.claude/hooks/session-end-learnings.mjs, async)
+SessionEnd hook (.agents/hooks/session-end-learnings.mjs, async)
   → headless `claude -p` (haiku) summarizes the transcript
   → appends deduplicated entries to docs/agents/learnings.md
 
@@ -25,7 +25,7 @@ CI (.github/workflows/ci.yml)
 `packages/evolution/src/allowlist.ts` is the **single source of truth**. Evolution PRs may change:
 
 - `AGENTS.md`, `docs/agents/**`, `docs/adr/**`
-- `.claude/settings.json`, `.claude/hooks/**`
+- `.claude/settings.json`, `.codex/hooks.json`, `.agents/hooks/**`
 - `packages/evolution/**`, `.github/workflows/ci.yml` (engine — requires an ADR in the same diff)
 - locally-owned skills: directories in `.agents/skills/` that are **not** in `skills-lock.json`, plus their `.claude/skills/<name>` / `.hermes/skills/<name>` symlinks
 
@@ -45,7 +45,7 @@ Everything else (app code, lockfiles, `skills-lock.json`, external skills) needs
 
 - `status:` is the digestion marker; `/evolve` flips it to `digested` when a PR consumes the entry.
 - When the buffer exceeds 32KB, move digested entries to `docs/agents/learnings-archive.md`.
-- Canonical parser: `packages/evolution/src/learnings-format.ts`. The hook keeps an intentional `.mjs` duplicate in `.claude/hooks/lib/learnings.mjs` (hooks cannot import workspace TS) — change both together; `learnings-format.test.ts` pins the format.
+- Canonical parser: `packages/evolution/src/learnings-format.ts`. The hook keeps an intentional `.mjs` duplicate in `.agents/hooks/lib/learnings.mjs` (hooks cannot import workspace TS) — change both together; `learnings-format.test.ts` pins the format.
 
 ## Gates (packages/evolution)
 

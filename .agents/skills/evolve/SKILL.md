@@ -22,7 +22,7 @@ Turn undigested entries in `docs/agents/learnings.md` into one reviewed PR. Read
    - `cd packages/evolution && EVOLUTION_DIFF_BASE=origin/main vp test run src/evolution-guard.test.ts` (after committing)
    - Optional semantic eval: `cd packages/evolution && SEMANTIC_EVAL=1 vp test run src/semantic-eval.test.ts` — record scores in the PR body.
 8. **PR** — push and `gh pr create` using `reference/pr-template.md` as the body. Add the `self-evolving` label: `gh pr create --label self-evolving ...`.
-9. **Engine self-modification** — if the diff touches `.claude/settings.json`, `.claude/hooks/**`, `packages/evolution/**`, or `.github/workflows/ci.yml`, you MUST add an ADR under `docs/adr/` in the same diff (next number, use `docs/adr/0000-template.md`) and tick the self-modifying checkbox in the PR body. CI fails otherwise.
+9. **Engine self-modification** — if the diff touches `.claude/settings.json`, `.codex/hooks.json`, `.agents/hooks/**`, `packages/evolution/**`, or `.github/workflows/ci.yml`, you MUST add an ADR under `docs/adr/` in the same diff (next number, use `docs/adr/0000-template.md`) and tick the self-modifying checkbox in the PR body. CI fails otherwise.
 
 ## New skills (MUSE Creation)
 
