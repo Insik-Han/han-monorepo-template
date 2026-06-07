@@ -26,40 +26,49 @@ jobs:
       # vp build is not part of CI yet: Cloudflare/native builds need secrets.
       # Add a build job here once deploy targets are wired up.
 
-  # lingui catalog sync — re-extracts catalogs on every PR and, when they
-  # changed, pushes the diff back to the PR branch as a bot commit instead of
-  # failing the build (Lingui v6 dropped `extract --check`). The bot commit is
-  # made with GITHUB_TOKEN, so it does not retrigger CI. See docs/agents/i18n.md.
+  # lingui catalog freshness — re-extracts catalogs on every PR; if they
+  # change, posts the diff as a PR comment and fails the job (Lingui v6
+  # dropped `extract --check`). Read-only by design: CI never pushes to the
+  # PR branch. See docs/agents/i18n.md.
   i18n-extract:
-    # same-repo PRs only — fork branches don't exist in this repo and can't be
-    # pushed to with GITHUB_TOKEN anyway.
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          # check out the PR head branch (not the detached merge commit) so the
-          # re-extracted catalogs can be pushed back to it.
-          ref: ${{ github.head_ref }}
       - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
         with:
           node-version: "26"
           cache: true
       - run: vp install
       - run: vp run i18n:extract
-      - name: Push catalog updates to the PR branch
+      - name: Fail with a PR comment when catalogs are stale
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           # keep in sync with `catalogs[].path` in each app's lingui.config.ts
           locales="apps/web/src/shared/i18n/locales apps/native/shared/i18n/locales"
-          if [ -n "$(git status --porcelain -- $locales)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -- $locales
-            git commit -m "chore(i18n): re-extract lingui catalogs"
-            git push
-            echo "::warning::Catalogs were stale — re-extracted and pushed to the PR branch. Translate any new empty msgstr entries before merging."
+          # intent-to-add so newly created catalogs (e.g. a fresh locale) show
+          # up in git diff; single git process, so no index.lock race.
+          git add -N -- $locales
+          if ! git diff --quiet -- $locales; then
+            {
+              echo "### ⚠️ Lingui catalogs are stale"
+              echo
+              echo 'CI re-ran `vp run i18n:extract` and got a diff. Run it locally, translate any new `msgstr` entries, and commit the result.'
+              echo
+              echo '```diff'
+              git diff -- $locales | head -300
+              echo '```'
+            } > /tmp/stale-catalogs.md
+            # fork PRs have a read-only token — the comment is best-effort,
+            # the job failure below is the actual gate.
+            gh pr comment "$PR_NUMBER" --body-file /tmp/stale-catalogs.md || echo "::notice::Could not post PR comment (read-only token?)"
+            echo "::error::Lingui catalogs are stale — run 'vp run i18n:extract' locally and commit the diff."
+            exit 1
           fi
 
   # Self-evolution PRs (label: self-evolving) get a stricter diff-level gate:
