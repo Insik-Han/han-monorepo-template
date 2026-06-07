@@ -8,6 +8,10 @@
           {
             "type": "command",
             "command": "node \"$CLAUDE_PROJECT_DIR\"/.agents/hooks/guard-main-branch.mjs"
+          },
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR\"/.agents/hooks/guard-package-manager.mjs"
           }
         ]
       }

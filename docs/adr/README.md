@@ -4,9 +4,10 @@ System-wide decisions for this repo. Context-scoped decisions live in `<context-
 
 ## Index
 
-| ADR                               | Title                                                   | Status   |
-| --------------------------------- | ------------------------------------------------------- | -------- |
-| `0001-self-evolution-pipeline.md` | Self-evolution runs through allowlisted, gated PRs only | accepted |
+| ADR                                           | Title                                                     | Status   |
+| --------------------------------------------- | --------------------------------------------------------- | -------- |
+| `0001-self-evolution-pipeline.md`             | Self-evolution runs through allowlisted, gated PRs only   | accepted |
+| `0002-enforce-vp-package-manager-via-hook.md` | Enforce vp-only package management with a PreToolUse hook | accepted |
 
 ## Conventions
 
