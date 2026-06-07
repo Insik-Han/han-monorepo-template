@@ -19,7 +19,6 @@
     "test": "turbo test",
     "test:e2e": "turbo test:e2e",
     "i18n:extract": "turbo i18n:extract",
-    "i18n:check": "turbo i18n:check",
     "check": "vp lint && vp fmt --write",
     "rename": "node scripts/rename.ts"
   },

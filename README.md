@@ -266,7 +266,6 @@ All `package.json` scripts run through `vp run` (alias: `vpr`).
 | `vp run test` / `vp run test:e2e`                      | Unit & integration suites / E2E suites                   |
 | `vp run check`                                         | Lint, type check, and format (`vp lint` / `vp fmt`)      |
 | `vp run i18n:extract`                                  | Extract Lingui messages to `.po` catalogs (web + native) |
-| `vp run i18n:check`                                    | Fail if `.po` catalogs are stale (used in CI)            |
 | `vp run db:generate`                                   | Generate Drizzle migrations                              |
 | `vp run db:migrate:local` / `db:migrate:remote`        | Apply D1 migrations                                      |
 | `vp run deploy`                                        | Build and deploy web (Pages) + server (Workers)          |

@@ -5,7 +5,7 @@ export default defineConfig({
   sourceLocale: "en",
   locales: ["en", "ja", "ko"],
   // No `#: file:line` references in catalogs — they churn on unrelated source
-  // edits and turn the CI freshness gate (i18n:check) into noise.
+  // edits and would turn CI's auto-extract push (i18n-extract job) into noise.
   format: formatter({ lineNumbers: false }),
   catalogs: [
     {

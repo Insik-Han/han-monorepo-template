@@ -11,7 +11,6 @@
     "prebuild": "expo prebuild",
     "web": "expo start --web",
     "i18n:extract": "lingui extract",
-    "i18n:check": "lingui extract && git add -N -- shared/i18n/locales && git diff --exit-code -- shared/i18n/locales",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:e2e": "maestro test .maestro"
