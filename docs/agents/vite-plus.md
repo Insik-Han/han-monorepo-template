@@ -17,7 +17,7 @@ Vite+ is distinct from Vite, and it invokes Vite through `vp dev` and `vp build`
 
 ## Package management
 
-Use `vp` for all package management — do not call `pnpm`, `npm`, or `npx` directly. `vp` detects the workspace's package manager (pnpm here, via `packageManager` in `package.json`) and downloads the matching version automatically.
+Use `vp` for all package management — do not call `pnpm`, `npm`, or `npx` directly. `vp` detects the workspace's package manager (pnpm here, via `packageManager` in `package.json`) and downloads the matching version automatically. This rule is enforced: a PreToolUse hook (`.agents/hooks/guard-package-manager.mjs`) blocks direct `pnpm`/`npm`/`npx` calls (ADR-0002).
 
 - `vp install` installs dependencies; `vp install --lockfile-only` updates `pnpm-lock.yaml` without a full install.
 - `vp add <pkg>` / `vp add -D <pkg>` / `vp remove <pkg>` edit dependencies.

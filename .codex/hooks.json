@@ -7,6 +7,10 @@
           {
             "type": "command",
             "command": "node .agents/hooks/guard-main-branch.mjs"
+          },
+          {
+            "type": "command",
+            "command": "node .agents/hooks/guard-package-manager.mjs"
           }
         ]
       }
